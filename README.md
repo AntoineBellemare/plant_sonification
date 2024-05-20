@@ -1,6 +1,6 @@
 # Plant Sonification
 
-Welcome to the Plant Sonification project! This repository contains code that converts plant electrophysiology into musical structures. By capturing and analyzing the electrical signals of plants, we can translate these bio-signals into unique and dynamic soundscapes. This project aims to bridge the gap between nature and technology, creating a new way to experience the hidden rhythms of plant life.
+This repository contains code that converts plant electrophysiology into musical structures. By capturing and analyzing the electrical signals of plants, we can translate these bio-signals into unique and dynamic soundscapes. This project aims to bridge the gap between nature and technology, creating a new way to experience the hidden rhythms of plant life.
 
 ## Project Overview
 
