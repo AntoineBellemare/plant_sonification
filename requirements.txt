@@ -1,0 +1,6 @@
+numpy
+biotuner @ git+https://github.com/AntoineBellemare/biotuner.git
+librosa
+matplotlib
+pandas
+scipy
