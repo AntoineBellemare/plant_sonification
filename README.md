@@ -34,3 +34,23 @@ To get started with this project, clone this repository and navigate to the proj
 git clone https://github.com/yourusername/plant-sonification.git
 cd plant-sonification
 pip install -r requirements.txt
+```
+
+## Notebook 1
+
+### 1. Temporal Clustering
+
+We use temporal clustering to identify patterns in the electrophysiological data over time, utilizing the spectral centroid as the main feature.
+
+### 2. Spectral Analysis
+
+We analyze the spectral properties of the data:
+- **Spectromorphology**: Examining the spectral centroid.
+- **Cepstrum Analysis**: Identifying the main cepstral peaks.
+
+### 3. Melodies and Chord Progressions in MIDI
+
+We translate the analyzed data into musical structures:
+- **Melody Generation**: Mapping the spectral centroid across segments.
+- **Chord Progression**: Using the main cepstral peaks in each segment to create chord progressions.
+
