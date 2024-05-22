@@ -36,7 +36,7 @@ cd plant-sonification
 pip install -r requirements.txt
 ```
 
-## Notebook 1
+## Notebook 1 - Temporal Clustering, Melodies and Spectral Chords
 
 ### 1. Temporal Clustering
 
@@ -53,4 +53,23 @@ We analyze the spectral properties of the data:
 We translate the analyzed data into musical structures:
 - **Melody Generation**: Mapping the spectral centroid across segments.
 - **Chord Progression**: Using the main cepstral peaks in each segment to create chord progressions.
+
+## Notebook 2 - Spectromorphological Curves
+
+### Overview
+
+This notebook explores how to turn plant bio-signals into music using their spectral characteristics. We generate curves that can be used as control parameters in Digital Audio Workstations (DAWs) to create unique soundscapes.
+
+### Objectives
+
+1. **Extract Spectral Features**: Analyze key spectral features from plant signals.
+2. **Generate Curves**: Create curves showing how these features change over time.
+3. **Control Parameters for DAWs**: Use the curves to control music software.
+
+### Procedure
+
+1. **Load and Normalize Data**: Import and normalize plant signal data.
+2. **Extract Features**: Calculate spectral centroid, bandwidth, and flux across time.
+3. **Create Curves**: Generate and smooth curves from these features.
+4. **Export Curves**: Save the curves as files for DAWs.
 
