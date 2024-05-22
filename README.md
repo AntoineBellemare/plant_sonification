@@ -36,7 +36,13 @@ cd plant-sonification
 pip install -r requirements.txt
 ```
 
-## Notebook 1
+## Notebook 1 - Temporal Clustering, Melodies, and Spectral Chords
+
+### Objectives
+
+1. **Identify Temporal Patterns**: Use clustering to find patterns in the data over time.
+2. **Analyze Spectral Properties**: Examine the spectral centroid and main spectral peaks.
+3. **Generate Musical Structures**: Create melodies and chord progressions in MIDI format.
 
 ### 1. Temporal Clustering
 
@@ -46,11 +52,34 @@ We use temporal clustering to identify patterns in the electrophysiological data
 
 We analyze the spectral properties of the data:
 - **Spectromorphology**: Examining the spectral centroid.
-- **Cepstrum Analysis**: Identifying the main cepstral peaks.
+- **Extraction of Spectral Peaks**: Identifying the main spectral peaks using two different methods (EMD, cepstrum).
 
 ### 3. Melodies and Chord Progressions in MIDI
 
 We translate the analyzed data into musical structures:
 - **Melody Generation**: Mapping the spectral centroid across segments.
-- **Chord Progression**: Using the main cepstral peaks in each segment to create chord progressions.
+- **Chord Progression**: Using the main spectral peaks in each segment to create chord progressions.
 
+## Notebook 2 - Spectromorphological Curves
+
+### Objectives
+
+1. **Extract Spectral Features**: Analyze key spectral features from plant signals.
+2. **Generate Curves**: Create curves showing how these features change over time.
+3. **Control Parameters for DAWs**: Use the curves to control music software.
+
+### 1. Load and Normalize Data
+
+Import and normalize plant signal data to ensure consistency.
+
+### 2. Extract Features
+
+Calculate spectral centroid, bandwidth, and flux across time to understand the spectral characteristics of the plant signals.
+
+### 3. Create Curves
+
+Generate and smooth curves from these features to highlight significant trends and patterns.
+
+### 4. Export Curves
+
+Save the generated curves as files for use in Digital Audio Workstations (DAWs), enabling them to be used as control parameters for music production.
