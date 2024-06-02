@@ -88,3 +88,8 @@ Generate and smooth curves from these features to highlight significant trends a
 ### 4. Export Curves
 
 Save the generated curves as files for use in Digital Audio Workstations (DAWs), enabling them to be used as control parameters for music production.
+
+### Example of curves for 5 days with the same plant
+
+![Spectral_Centroid_Acer_rubrum](https://github.com/AntoineBellemare/plant_sonification/assets/49297774/cb3133d8-54f8-4501-8b9e-c617e571f64e)
+
