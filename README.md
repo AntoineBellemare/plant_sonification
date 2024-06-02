@@ -62,7 +62,7 @@ We translate the analyzed data into musical structures:
 
 ### Audio example of spectral chords : 
 
-[Listen to the Audio](audio_examples/acer_rubrum_27-02.mp3)
+[Listen to the Audio](https://github.com/AntoineBellemare/plant_sonification/assets/49297774/bcc41e82-aa98-43ee-a727-b99ff0a8e181)
 
 
 ## Notebook 2 - Spectromorphological Curves
