@@ -36,7 +36,7 @@ cd plant-sonification
 pip install -r requirements.txt
 ```
 
-##📙 Notebook 1 - Temporal Clustering, Melodies, and Spectral Chords 📙
+## 📙 Notebook 1 - Temporal Clustering, Melodies, and Spectral Chords 📙
 
 ### Objectives
 
@@ -65,7 +65,7 @@ We translate the analyzed data into musical structures:
 [Listen to the Audio](https://github.com/AntoineBellemare/plant_sonification/assets/49297774/46def8f3-1409-44e6-b51f-2175a6d2a509)
 
 
-##📒 Notebook 2 - Spectromorphological Curves 📒
+## 📒 Notebook 2 - Spectromorphological Curves 📒
 
 ### Objectives
 
