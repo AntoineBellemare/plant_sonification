@@ -92,8 +92,8 @@ Save the generated curves as files for use in Digital Audio Workstations (DAWs),
 ### Example of curves for 5 days with the same plant
 
 <p align="center">
-  <img src="https://github.com/AntoineBellemare/plant_sonification/assets/49297774/89ac28df-732a-45c1-ae0c-befcd9e00b2b" width="48%" />
-  <img src="https://github.com/AntoineBellemare/plant_sonification/assets/49297774/7cc450fa-bff8-4a6d-a754-2996bb1b7f4c" width="48%" />
+  <img src="https://github.com/AntoineBellemare/plant_sonification/assets/49297774/585974fa-9edb-40b7-ba27-2a97f26d610b" width="48%" />
+  <img src="https://github.com/AntoineBellemare/plant_sonification/assets/49297774/b22b774c-4c4a-4557-a165-982de16fcc3e" width="48%" />
 </p>
 
 
