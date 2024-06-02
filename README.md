@@ -1,7 +1,8 @@
 # Plant Sonification
 
-![bounzai_logo_of_a_cybernetic_plant_becoming_new_musical_geometr_7b339094-e5e0-4cdb-a4e1-bb7f61600e91-removebg-preview](https://github.com/AntoineBellemare/plant_sonification/assets/49297774/0b7db764-7aa4-42a3-9fa3-e3de856663ca)
-
+<p align="center">
+  <img src="https://github.com/AntoineBellemare/plant_sonification/assets/49297774/0b7db764-7aa4-42a3-9fa3-e3de856663ca" width="48%" />
+</p>
 
 This repository contains code that converts plant electrophysiology into musical structures. By capturing and analyzing the electrical signals of plants, we can translate these bio-signals into unique and dynamic soundscapes. This project aims to bridge the gap between nature and technology, creating a new way to experience the hidden rhythms of plant life.
 
