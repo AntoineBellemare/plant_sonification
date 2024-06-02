@@ -61,10 +61,9 @@ We translate the analyzed data into musical structures:
 - **Chord Progression**: Using the main spectral peaks in each segment to create chord progressions.
 
 ### Audio example of spectral chords : 
-<audio controls>
-  <source src="https://raw.githubusercontent.com/antoinebellemare/plant_sonification/main/audio_examples/to/acer_rubrum_27-02.mp3" type="audio/mpeg">
-  Your browser does not support the audio element.
-</audio>
+
+[Listen to the Audio](https://raw.githubusercontent.com/antoinebellemare/plant_sonification/main/audio_examples/to/acer_rubrum_27-02.mp3)
+
 
 ## Notebook 2 - Spectromorphological Curves
 
