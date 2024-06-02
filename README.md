@@ -6,9 +6,9 @@ This repository contains code that converts plant electrophysiology into musical
 
 This project involves the sonification of various plant species. The electrophysiological data of the plants are recorded over different periods and then converted into musical structures. Each plant's unique bio-signals are captured, processed, and transformed into sound, allowing us to hear the "music" created by these living organisms.
 
-## Captations
+## Captations ⚡️
 
-The following list outlines the plants studied during Spring 2024.
+🌿 Plants studied during Spring 2024 🌿
 
 1. **Acer rubrum**
 
@@ -26,7 +26,7 @@ The following list outlines the plants studied during Spring 2024.
 
 8. **Acer pensylvanicum**
 
-## Getting Started
+## Getting Started 🔑
 
 To get started with this project, clone this repository and navigate to the project directory. The code is written in Python and requires several libraries, which can be installed using the provided `requirements.txt` file.
 
@@ -59,6 +59,12 @@ We analyze the spectral properties of the data:
 We translate the analyzed data into musical structures:
 - **Melody Generation**: Mapping the spectral centroid across segments.
 - **Chord Progression**: Using the main spectral peaks in each segment to create chord progressions.
+
+### Audio example of spectral chords : 
+<audio controls>
+  <source src="https://raw.githubusercontent.com/antoinebellemare/plant_sonification/main/audio_examples/to/acer_rubrum_27-02.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+</audio>
 
 ## Notebook 2 - Spectromorphological Curves
 
