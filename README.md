@@ -36,7 +36,7 @@ cd plant-sonification
 pip install -r requirements.txt
 ```
 
-## Notebook 1 - Temporal Clustering, Melodies, and Spectral Chords
+## 📙 Notebook 1 - Temporal Clustering, Melodies, and Spectral Chords 📙
 
 ### Objectives
 
@@ -62,10 +62,10 @@ We translate the analyzed data into musical structures:
 
 ### Audio example of spectral chords : 
 
-[Listen to the Audio](https://github.com/AntoineBellemare/plant_sonification/assets/49297774/bcc41e82-aa98-43ee-a727-b99ff0a8e181)
+[Listen to the Audio](https://github.com/AntoineBellemare/plant_sonification/assets/49297774/46def8f3-1409-44e6-b51f-2175a6d2a509)
 
 
-## Notebook 2 - Spectromorphological Curves
+## 📒 Notebook 2 - Spectromorphological Curves 📒
 
 ### Objectives
 
@@ -88,3 +88,12 @@ Generate and smooth curves from these features to highlight significant trends a
 ### 4. Export Curves
 
 Save the generated curves as files for use in Digital Audio Workstations (DAWs), enabling them to be used as control parameters for music production.
+
+### Example of curves for 5 days with the same plant
+
+<p align="center">
+  <img src="https://github.com/AntoineBellemare/plant_sonification/assets/49297774/585974fa-9edb-40b7-ba27-2a97f26d610b" width="48%" />
+  <img src="https://github.com/AntoineBellemare/plant_sonification/assets/49297774/b22b774c-4c4a-4557-a165-982de16fcc3e" width="48%" />
+</p>
+
+
