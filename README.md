@@ -91,7 +91,9 @@ Save the generated curves as files for use in Digital Audio Workstations (DAWs),
 
 ### Example of curves for 5 days with the same plant
 
-![Spectral_Centroid_Alnus2](https://github.com/AntoineBellemare/plant_sonification/assets/49297774/46d350c9-8e55-48c2-a72e-b12f5e52a08b)
-![Spectral_Centroid_Acer_rubrum2](https://github.com/AntoineBellemare/plant_sonification/assets/49297774/e5ce25f2-a885-4860-a944-1f55fdc592a0)
+<p align="center">
+  <img src="https://github.com/AntoineBellemare/plant_sonification/assets/49297774/89ac28df-732a-45c1-ae0c-befcd9e00b2b" width="48%" />
+  <img src="https://github.com/AntoineBellemare/plant_sonification/assets/49297774/7cc450fa-bff8-4a6d-a754-2996bb1b7f4c" width="48%" />
+</p>
 
 
