@@ -101,6 +101,7 @@ Save the generated curves as files for use in Digital Audio Workstations (DAWs),
 </p>
 
 ## 📗 Notebook 3 - Plant Connectivity Analysis 📗
+⚠️(sonification of connectivity to come)⚠️
 
 ### Objectives
 
