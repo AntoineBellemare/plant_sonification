@@ -100,4 +100,36 @@ Save the generated curves as files for use in Digital Audio Workstations (DAWs),
   <img src="https://github.com/AntoineBellemare/plant_sonification/assets/49297774/b22b774c-4c4a-4557-a165-982de16fcc3e" width="48%" />
 </p>
 
+## 📗 Notebook 3 - Plant Connectivity Analysis 📗
+
+### Objectives
+
+1. **Measure Connectivity**: Analyze the connectivity between plants over time using time-series data.
+2. **Visualize Connectivity**: Create visual and animated representations of connectivity patterns.
+3. **One-to-One and One-to-Many Connectivity**: Examine individual and averaged connectivity among plants.
+
+### 1. Setup, Imports, and Data Loading
+
+Initialize the environment, import necessary libraries, and load raw data files for the plants.
+- **Libraries**: numpy, matplotlib, custom scripts.
+- **Data Path**: Define the folder path for plant data files.
+- **File Handling**: Load .raw files, filter out NaNs, and normalize the data.
+
+### 2. Measuring Connectivity
+
+Measure the connectivity between plants over time using predefined methods.
+- **Harmonic Connectivity**: Apply harmonic connectivity methods and remove artifacts using filters.
+- **Data Segmentation**: Chunk the data into segments and calculate connectivity matrices for each segment.
+
+### 3. Visualize and Animate Connectivity
+
+Create visual and animated representations of connectivity patterns.
+- **Time-Series Visualization**: Plot connectivity matrices over time.
+- **Animation**: Use Matplotlib's animation functions to animate the connectivity data and save it as a GIF.
+
+### 4. Connectivity Analysis: One-to-One and One-to-Many
+
+Examine individual and averaged connectivity among plants.
+- **One-to-One Connectivity**: Extract and plot connectivity matrices for a specific plant, smoothing the data for clarity.
+- **One-to-Many Connectivity**: Calculate and visualize the average connectivity for each plant, smoothing the data to highlight trends.
 
