@@ -133,3 +133,9 @@ Examine individual and averaged connectivity among plants.
 - **One-to-One Connectivity**: Extract and plot connectivity matrices for a specific plant, smoothing the data for clarity.
 - **One-to-Many Connectivity**: Calculate and visualize the average connectivity for each plant, smoothing the data to highlight trends.
 
+### Example of one-to-many connectivity
+
+![plant_connectivity](https://github.com/AntoineBellemare/plant_sonification/assets/49297774/f3f22abb-ccfb-4a0d-8948-047019c43d42)
+
+
+
