@@ -42,7 +42,7 @@ pip install -r requirements.txt
 
 ## 📙 Notebook 1 - Temporal Clustering, Melodies, and Spectral Chords 📙
 
-🎇[TRY THE COLAB](https://gist.github.com/AntoineBellemare/3fe2814bc2ab912ce4e1baa928be7f8d.js](https://colab.research.google.com/gist/AntoineBellemare/3fe2814bc2ab912ce4e1baa928be7f8d/1-temporal_clustering_melodies_and_chords.ipynb)🎇
+🎈🎈🎈🎇[TRY THE COLAB](https://colab.research.google.com/gist/AntoineBellemare/3fe2814bc2ab912ce4e1baa928be7f8d/1-temporal_clustering_melodies_and_chords.ipynb)🎇🎈🎈🎈
 
 ### Objectives
 
