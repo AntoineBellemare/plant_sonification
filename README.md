@@ -69,6 +69,8 @@ We translate the analyzed data into musical structures:
 ### Audio example of spectral chords : 
 
 [Listen to the Audio](https://github.com/AntoineBellemare/plant_sonification/assets/49297774/46def8f3-1409-44e6-b51f-2175a6d2a509)
+[Listen again](https://github.com/AntoineBellemare/plant_sonification/assets/49297774/220b3c91-e33d-43bf-8efd-c9b55308d7f5)
+
 
 
 ## 📒 Notebook 2 - Spectromorphological Curves 📒
