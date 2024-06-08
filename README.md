@@ -42,8 +42,8 @@ pip install -r requirements.txt
 
 ## 📙 Notebook 1 - Temporal Clustering, Melodies, and Spectral Chords 📙
 
-TRY THE COLAB : 
-<script src="[https://gist.github.com/username/gist-id.js](https://colab.research.google.com/gist/AntoineBellemare/3fe2814bc2ab912ce4e1baa928be7f8d/1-temporal_clustering_melodies_and_chords.ipynb)"></script>
+[TRY THE COLAB](https://gist.github.com/AntoineBellemare/3fe2814bc2ab912ce4e1baa928be7f8d.js)
+
 ### Objectives
 
 1. **Identify Temporal Patterns**: Use clustering to find patterns in the data over time.
