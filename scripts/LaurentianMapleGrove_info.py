@@ -23,3 +23,22 @@ plant_common_names = {
     'Acer pensylvanicum': 'Striped Maple',
 }
 
+plant_common_names_fr = {
+    'Acer rubrum': 'Érable rouge',
+    'Rhododendron groenlandicum': 'Thé du Labrador',
+    'Dryopteris mas': 'Fougère mâle',
+    'Polystichum acrostichoides': 'Polystic en épi',
+    'Alnus': 'Aulne',
+    'Geum rivale': 'Benoîte des ruisseaux',
+    'Myrica gale': 'Gale odorante',
+    'Acer pensylvanicum': 'Érable à épis',
+}
+
+plant_distances = {
+    (3, 6): 50,
+    (7, 6): 275,
+    (7, 3): 300,
+    (7, 1): 180,
+    (1, 6): 290,
+    (1, 3): 285
+}
