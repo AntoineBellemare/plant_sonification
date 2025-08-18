@@ -9,6 +9,8 @@ from scipy import ndimage
 import pandas as pd
 import os
 import pickle
+import phyid.calculate
+from phyid.calculate import calc_PhiID
 
 # Function to segment the time series data based on boundary times
 def segment_time_series(data, bound_times):
@@ -58,6 +60,30 @@ def average_across_days(dfs_results, metric='transfer_entropy'):
     df_avg = df_combined.groupby(["Epoch", "Plant1", "Plant2"], as_index=False)[metric].mean()
     return df_combined, df_avg
 
+def average_across_days_phiid(dfs_results):
+    """
+    Combines results from multiple days for PhiID metrics (pairwise plant atoms).
+    Returns:
+        - df_combined: All results stacked
+        - df_avg: Averaged by (Epoch, Plant1, Plant2) for each atom
+    """
+    df_results_final = []
+    for df in dfs_results:
+        if len(df) == 0:
+            continue
+        df = df.copy()
+        # plant col contains tuples (plant1, plant2), split into two columns
+        df[["Plant1", "Plant2"]] = pd.DataFrame(df["plant"].tolist(), index=df.index)
+        df = df.rename(columns={"epoch": "Epoch"})
+        atom_cols = [c for c in df.columns if c not in ["Epoch", "Plant1", "Plant2", "plant", "date"]]
+        df = df[["Epoch", "Plant1", "Plant2"] + atom_cols + ["date"]]
+        df_results_final.append(df)
+    if not df_results_final:
+        return pd.DataFrame(), pd.DataFrame()
+    df_combined = pd.concat(df_results_final, ignore_index=True)
+    df_avg = df_combined.groupby(["Epoch", "Plant1", "Plant2", 'date'], as_index=False)[atom_cols].mean()
+    return df_combined, df_avg
+
 # Define namedtuple to store transfer entropy results
 TimeDelayed = namedtuple('TimeDelayed', ['timedelayedMU', 'transferE'])
 
@@ -95,6 +121,75 @@ def discretize_data(data, bins=10):
         numpy array: Discretized version of the data.
     """
     return np.digitize(data, np.linspace(data.min(), data.max(), bins))
+
+
+def compute_phiid(epoch_data, keep_idx, tau=5, kind="knn", redundancy="MMI",
+                  ridge=1e-8, allow_singular=True):
+    """
+    PhiID per ordered pair (i->j) with two stabilizers:
+      - allow_singular: forwarded to calc_PhiID if supported
+      - ridge: tiny jitter added ONLY on failure to make cov PD (default 1e-8)
+    """
+    from phyid.calculate import calc_PhiID
+
+    n_channels, n_time = epoch_data.shape
+    atom_names = [
+        "rtr", "rtx", "rty", "rts", "xtr", "xtx", "xty", "xts",
+        "ytr", "ytx", "yty", "yts", "str", "stx", "sty", "sts"
+    ]
+    results = {}
+    rng = np.random.default_rng(1234)  # reproducible
+
+    for i in range(n_channels):
+        for j in range(n_channels):
+            if i == j:
+                continue
+            src = epoch_data[i].astype(float)
+            trg = epoch_data[j].astype(float)
+            key = (keep_idx[i], keep_idx[j])
+
+            # Try 1: pass allow_singular/ridge if supported
+            try:
+                atoms_res, _ = calc_PhiID(
+                    src, trg, tau, kind=kind, redundancy=redundancy,
+                    allow_singular=allow_singular, ridge=ridge
+                )
+            except TypeError:
+                # Library version may not accept these kwargs – retry clean
+                try:
+                    atoms_res, _ = calc_PhiID(src, trg, tau, kind=kind, redundancy=redundancy)
+                except np.linalg.LinAlgError:
+                    atoms_res = None
+            except np.linalg.LinAlgError:
+                atoms_res = None
+
+            # Try 2: on LinAlg failure, add tiny jitter (ridge) + allow_singular=True
+            if atoms_res is None:
+                eps = ridge if ridge > 0 else 1e-8
+                # jitter scaled to signal std so absolute scale is preserved
+                jsrc = src + rng.normal(0.0, np.sqrt(eps) * (np.std(src) + 1e-12), size=src.shape)
+                jtrg = trg + rng.normal(0.0, np.sqrt(eps) * (np.std(trg) + 1e-12), size=trg.shape)
+                try:
+                    atoms_res, _ = calc_PhiID(
+                        jsrc, jtrg, tau, kind=kind, redundancy=redundancy,
+                        allow_singular=True
+                    )
+                except TypeError:
+                    atoms_res, _ = calc_PhiID(jsrc, jtrg, tau, kind=kind, redundancy=redundancy)
+                except Exception:
+                    atoms_res = None
+
+            if atoms_res is None:
+                # final fallback: NaNs
+                atom_vals = {name: np.nan for name in atom_names}
+            else:
+                atom_vals = {name: float(np.mean(atoms_res.get(name, np.nan))) for name in atom_names}
+
+            results[key] = atom_vals
+
+    return results
+
+
 
 
 
