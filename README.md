@@ -1,4 +1,4 @@
-# Plant Sonification
+# Plant Waves (Connectivity and Sonification)
 
 <p align="center">
   <img src="https://github.com/AntoineBellemare/plant_sonification/assets/49297774/0b7db764-7aa4-42a3-9fa3-e3de856663ca" width="48%" />
