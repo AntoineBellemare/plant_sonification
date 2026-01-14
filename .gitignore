@@ -1,0 +1,7 @@
+data/
+figures/
+music_output/
+.vscode/
+*.pyc
+__pycache__/
+**/__pycache__/

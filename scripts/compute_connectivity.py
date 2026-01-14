@@ -79,7 +79,7 @@ def main():
 
     for SEASON in list_seasons:
         season_name = seasons[SEASON]
-        folderpath = f'../plant_data_{ecosystem}/{season_name}'
+        folderpath = f'../data/processed/plant_data_{ecosystem}/{season_name}'
         dates = [
             d for d in os.listdir(folderpath)
             if os.path.isdir(os.path.join(folderpath, d)) and not d.startswith('Serie')

@@ -19,6 +19,7 @@ seasons = {
     SPRING5: 'Spring 2025_05',
     SPRING6: 'Spring 2025_06',
     SPRING7: 'Spring 2025_07',
+    SPRING8: 'Spring 2025_08',
     SUMMER1: 'Summer 2024_01'
 }
 
